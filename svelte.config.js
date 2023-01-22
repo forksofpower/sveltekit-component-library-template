@@ -10,7 +10,7 @@ const config = {
     exports: (filePath) => !/^_|\/_|\.(d|test|stories)\.ts$/.test(filePath)
   },
   kit: {
-    adapter: adapter(),
+    adapter: adapter()
   }
 };
 
