@@ -44,8 +44,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-storybook": "^0.6.10",
     "eslint-plugin-svelte3": "^4.0.0",
+    "husky": "^8.0.3",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
     "react": "^18.2.0",
@@ -63,6 +65,11 @@
   },
   "peerDependencies": {
     "svelte": "^3.54.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,mdx,svelte,md}": [
+      "npm run format"
+    ]
   },
   "jest": {
     "transform": {
