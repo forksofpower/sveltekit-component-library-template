@@ -1,4 +1,4 @@
-# React Component Library Template
+# SvelteKit Component Library Template
 
 ## Get Started
 
@@ -58,15 +58,7 @@ Loaded templates: _templates
 
 ## Optimizations
 
-_Babel needs to be added to do import replacement and dev expressions_
-
-<!--
-This package comes with some optimizations to improve the developer experience.
-
-After your code is compiled with TypeScript, it is then processed with a few babel plugins:
-
-- [babel-plugin-dev-expression](https://github.com/4Catalyzer/babel-plugin-dev-expression): A mirror of Facebook's dev-expression Babel plugin. It reduces or eliminates development checks from production code.
-- [babel-plugin-rename-import](https://github.com/laat/babel-plugin-transform-rename-import): Used to rewrite any `lodash` imports. -->
+_Sveltekit uses Vite for bundling/building. Babel optimizations to come later._
 
 ## Customization
 
@@ -78,7 +70,18 @@ rm -r _templates/*
 
 ## Publish and Deploy
 
-Use [https://www.npmjs.com/package/np](np) to handle publishing to npm.
+**NPM**
+
+> **Warning**
+> This project uses `svelte-package` to handle the build step and is fairly limited in terms of direct control over the build output. There are workaround implemented in this template to reduce the amount of bloat in the final deployed output. It is highly suggested that you run `yarn pack` inside the `package/` directory and inspect the built tar archive for the correct files.
+
+Build and publish the package to npm.
+
+```shell
+yarn build
+cd package
+npm publish
+```
 
 Running `yarn build-storybook` will generate a static build of your storybook. This can be deployed anywhere where static sites are hosted. Here are a few examples:
 
