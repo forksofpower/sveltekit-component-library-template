@@ -118,6 +118,6 @@ You are more than welcome to generate a new project from scratch and tune it to 
 - [ ] DX
   - [ ] hygen + component template
   - [ ] dependabot
-  - [ ] husky
-  - [ ] lint-staged
+  - [x] husky
+  - [x] lint-staged
   - [ ] size-limit
