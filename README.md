@@ -111,13 +111,13 @@ You are more than welcome to generate a new project from scratch and tune it to 
 
 - [x] npm deployment
 - [x] storybook site deployment
-- [ ] customizations
-  - [x] postcss
+- [ ] postcss
+- [ ] customization docs
   - [ ] tailwind
   - [ ] emotion
 - [ ] DX
   - [ ] hygen + component template
-  - [ ] dependabot
+  - [x] dependabot
   - [x] husky
   - [x] lint-staged
-  - [ ] size-limit
+  - ~~size-limit~~ _can't be installed without a completely seperate webpack config and support for svelte files_
