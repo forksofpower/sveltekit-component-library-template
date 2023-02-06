@@ -15,8 +15,16 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     name: 'World',
-    type: 'primary',
+    type: undefined,
     size: 'sm'
+  }
+};
+
+export const Primary: Story = {
+  args: {
+    name: 'World',
+    type: 'primary',
+    size: 'lg'
   }
 };
 
@@ -31,7 +39,7 @@ export const Danger: Story = {
 export const Large: Story = {
   args: {
     name: 'World',
-    type: 'primary',
+    type: undefined,
     size: 'lg'
   }
 };
@@ -39,7 +47,7 @@ export const Large: Story = {
 export const Small: Story = {
   args: {
     name: 'World',
-    type: 'danger',
+    type: undefined,
     size: 'sm'
   }
 };

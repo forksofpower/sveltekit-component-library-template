@@ -1,9 +1,12 @@
 <script lang="ts">
+  import type { Optional } from '$lib/utils';
+
   type ButtonSize = 'lg' | 'sm';
   type ButtonType = 'primary' | 'danger';
+
   export let name: string;
-  export let size: ButtonSize = 'sm';
-  export let type: ButtonType = 'primary';
+  export let size: Optional<ButtonSize>;
+  export let type: Optional<ButtonType>;
 </script>
 
 <button
@@ -12,7 +15,7 @@
   on:focus
   on:mouseenter
   on:mouseleave
-  class={`${size} ${type}`}
+  class={`${size || ''} ${type || ''}`}
 >
   Hello {name}!
 </button>
