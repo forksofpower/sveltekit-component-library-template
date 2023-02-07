@@ -43,17 +43,15 @@ $ yarn new:component NavBar
 ▸ atom
   molecule
   organism
-? Pick a story language? …
-▸ tsx
-  mdx
+  template
+  recipe
 
 Loaded templates: _templates
-       added: src/components/NavBar/NavBar.tsx
-       added: src/components/NavBar/index.ts
-       added: src/components/NavBar/NavBar.scss
-       added: src/components/NavBar/NavBar.stories.tsx
-       added: src/components/NavBar/NavBar.test.tsx
-      inject: src/components/index.ts
+       added: src/lib/components/NavBar/NavBar.svelte
+       added: src/lib/components/NavBar/index.ts
+       added: src/lib/components/NavBar/NavBar.stories.ts
+       added: src/lib/components/NavBar/NavBar.test.ts
+      inject: src/lib/components/index.ts
 ```
 
 ## Optimizations
